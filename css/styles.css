@@ -110,17 +110,37 @@ body {
   	of the box. */
   box-sizing: border-box;
 }
-@media (min-width: 56.25em) {
+@media (min-width: 75em) {
   body {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0;
   }
 }
 
 body {
-  color: #3f3f3f;
+  color: rgb(30, 30, 30);
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.6;
+  text-align: justify;
+}
+
+.testimonial {
+  color: rgb(235, 235, 235);
+}
+.testimonial__heading-4 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.testimonial__paragraph {
+  font-size: clamp(1.4rem, 5vw, 2rem);
+}
+@media (min-width: 56.25em) {
+  .testimonial__heading-4 {
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+  }
+  .testimonial__paragraph {
+    font-size: clamp(0.5rem, 2vw, 1rem);
+  }
 }
 
 .u-center-text {
@@ -191,15 +211,42 @@ body {
   transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
 }
 
+.testimonial {
+  background-color: rgb(1, 114, 96);
+  width: 100%;
+  padding: calc(15px + 5vw) clamp(15px + 3vw, 8vw, 15px + 8vw);
+  margin-bottom: calc(11px + 0.4rem);
+}
+.testimonial__img {
+  float: left;
+  width: min(33%, 11rem);
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+@media (min-width: 56.25em) {
+  .testimonial {
+    padding: calc(11px + 1vw) clamp(15px, 2vw, 15px + 8vw);
+  }
+  .testimonial__img {
+    margin-top: 0.7rem;
+    margin-right: 1.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .testimonial__img {
+    width: min(33%, 6rem);
+  }
+}
+
 @media (min-width: 56.25em) {
   .container {
     display: grid;
-    grid-template-columns: repeat(11, 1fr) minmax(15rem, 20%);
+    grid-template-columns: repeat(11, 1fr) minmax(20rem, 30%);
   }
 }
 @media (min-width: 75em) {
   .container {
-    grid-template-columns: minmax(15rem, 15%) repeat(10, 1fr) minmax(15rem, 15%);
+    grid-template-columns: minmax(15rem, 15%) repeat(10, 1fr) minmax(25rem, 30%);
   }
 }
 
@@ -217,7 +264,7 @@ body {
 }
 
 .sidebar {
-  background-color: chocolate;
+  padding: 1rem;
 }
 
 .footer {
@@ -229,6 +276,7 @@ body {
     grid-column: 1/-1;
   }
   .header {
+    height: auto;
     grid-column: 1/span 11;
     grid-row: 2/span 1;
   }

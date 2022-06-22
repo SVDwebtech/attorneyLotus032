@@ -26,35 +26,26 @@ body {
 	}
 }
 
-// topography of paragraph;
-.paragraph {
+.testimonial {
 	
-}
+	color: $color-white;
 
-// topography of navbar;
-.navbar {
-}
+	&__heading-4 {
+		font-size: clamp(2rem, 5vw, 3rem);
+	}
+	
+	&__paragraph {
+		font-size: clamp(1.4rem, 5vw, 2rem);
+	}
 
-// topography of hamburger menu;
-.hamburger {
-}
-
-// topography of buttons;
-.btn {
-}
-
-// topography of about-section;
-.header {
-}
-
-// topography of about-section;
-.about {
-}
-
-// topography of contact-section;
-.contact {
-}
-
-// topography of footer-section;
-.footer {
+	@include respond(tab-land) {
+		
+		&__heading-4 {
+		font-size: clamp(.5rem, 2.5vw, 1.5rem);
+		}
+	
+		&__paragraph {
+			font-size: clamp(.5rem, 2vw, 1rem);
+		}
+	}
 }

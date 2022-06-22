@@ -1,0 +1,30 @@
+.testimonial {
+    
+    background-color: $color-rainforest;
+    width: 100%;
+    padding:  calc($x-large + 5vw) clamp(calc($x-large + 3vw), 8vw, calc($x-large + 8vw));
+    margin-bottom: calc($large + .4rem);  
+
+    &__img {
+        float: left;
+        width: min(33%, 11rem);
+        margin-top: 1rem;
+        margin-right: 1.5rem;
+    }  
+
+    @include respond(tab-land) {
+        padding:  calc($large + 1vw) clamp(calc($x-large ), 2vw, calc($x-large + 8vw));
+
+        &__img {
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        }
+    }
+
+    @include respond(desk) {
+        
+        &__img {
+            width: min(33%, 6rem);
+        }
+    }
+}
