@@ -31,12 +31,47 @@ body {
 	color: $color-white;
 
 	&__heading-4 {
-		font-size: clamp(2rem, 5vw, 3rem);
+		font-size: clamp(1.4rem, 5vw, 3rem);
+		font-weight: 900;
 	}
 	
 	&__paragraph {
-		font-size: clamp(1.4rem, 5vw, 2rem);
+		font-size: clamp(1.2rem, 5vw, 2rem);
 	}
+
+	@include respond(tab-land) {
+		
+		&__heading-4 {
+		font-size: clamp(.5rem, 2.5vw, 1.5rem);
+		}
+	
+		&__paragraph {
+			font-size: clamp(.5rem, 2vw, 1rem);
+		}
+	}
+}
+
+.faq {
+	
+	color: $color-white;
+
+	&__heading-4 {
+		font-size: clamp(1.4rem, 5vw, 3rem);
+		font-weight: 900;
+        text-align: center;
+        border: 1px solid $color-white;
+        padding: $small $medium;
+        margin-bottom: $medium;
+	}
+	
+	&__paragraph {
+		font-size: clamp(1.2rem, 5vw, 2rem);
+	}
+
+	&__paragraph:nth-of-type(1) {
+        font-size: clamp(1.3rem, 5vw, 2.1rem);
+		font-weight: 700;
+    }
 
 	@include respond(tab-land) {
 		
