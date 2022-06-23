@@ -7,6 +7,10 @@
 	@include respond(desk) {
 		grid-template-columns: minmax(15rem, 15%) repeat(10, 1fr) minmax(25rem, 30%);
 	}
+
+	@include respond(big-desk) {
+		grid-template-columns: minmax(15rem, 15%) repeat(10, 1fr) 30rem;
+	}
 }
 
 .navbar {

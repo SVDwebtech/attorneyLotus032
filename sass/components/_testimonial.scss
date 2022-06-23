@@ -1,5 +1,4 @@
 .testimonial {
-    
     background-color: $color-prussianblue;
     width: 100%;
     padding:  calc($x-large + 5vw) clamp(calc($x-large + 3vw), 8vw, calc($x-large + 8vw));
@@ -7,16 +6,24 @@
 
     &__img {
         float: left;
+        border: 2px solid $color-gogreen;
         width: min(33%, 11rem);
-        margin-top: 1rem;
+        margin-top: .7rem;
         margin-right: 1.5rem;
     }  
+
+    @include respond(tab-port) {
+        
+        &__img {
+        margin-top: 1.1rem;
+        }
+    }
 
     @include respond(tab-land) {
         padding:  calc($large + 1vw) clamp(calc($x-large ), 2vw, calc($x-large + 8vw));
 
         &__img {
-        margin-top: .7rem;
+        margin-top: .6rem;
         margin-right: 1.5rem;
         }
     }
