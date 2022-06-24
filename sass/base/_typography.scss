@@ -10,19 +10,44 @@ body {
 
 .header {
 
-	&__heading {
-		
+	color: $color-white;
+
+	&__heading-h1 {
+		// color: $color-mudbrown;
+		text-align: center;
+
+		&--primary {
+			font-size: 2.5rem;
+			font-weight: 900;
+			letter-spacing: 4px;
+		}
+
+		&--secondary {
+			font-size: 1.6rem;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin-bottom: $small;
+		}
+
+		&--tertiary {
+			font-size: 1.2rem;
+			font-weight: 400;
+			letter-spacing: 2px;
+		}
 	}
 	
-	.heading__primary--main {
-		
-	}
-	.heading__primary--sub {
+	&__paragraph {
+		color: $color-grey-light;
+		font-size: 1.2rem;
+		text-align: center;
 		
 	}
 
-	&__paragraph {
-		
+	&__btn {
+		color: $color-white;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
 	}
 }
 

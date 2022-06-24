@@ -3,34 +3,72 @@
 /////////////////////////////////////////////////////////////////////
 
 .header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// align-items: center;
 
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: center;
+	
 
-	// background-image: linear-gradient(.55turn,rgba(0,0,0, .1) 10%, rgba(0,0,0, .88) 75%, rgba(0,0,0, 1) 98%), url(/img/bgHeaderImage.jpg);
+	background: linear-gradient(to bottom, $color-prussianblue 50%, $color-dark 80%);
 	// background-size: cover;
 	// background-position:center;
 	// background-repeat: no-repeat;
 
 	// padding: 2rem;
 	
+	&__content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
 
-	// &__heading {
-	// 	.heading__primary {
-	// 		&--main, &--sub {
-	// 			display: block;
-	// 		}
-	// 	}
-	// }
+		background: linear-gradient(to bottom, transparent 20%, $color-darkshadow 65%, $color-dark 85%), url("/img/attorney01.png");
+		background-size: contain;
+		background-position:center;
+		background-repeat: no-repeat;
+		height: min(100%, 70rem);
+		padding: 1rem 5rem 3rem;
+
+	}
+
+	&__heading-h1 {
+		
+		&--primary {
+			display: block;
+		}
+
+		&--secondary {
+			display: block;
+		}
+
+		&--tertiary {
+			display: block;
+
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+
+	&__heading-h1, &__paragraph {
+			margin-bottom: calc($x-large + 1rem);
+	}
+
+	&__blacklozenge {
+		margin: 0 1rem;
+	}
+
+	
 
 	// &__paragraph {
-	
+	// 	margin-bottom: $x-large;
 	// }
 		
-	// &__button {
-	
-	// }
+	&__btn {
+		background-color: transparent;
+		border: 2px solid $color-white;
+	}
 		
 }
 

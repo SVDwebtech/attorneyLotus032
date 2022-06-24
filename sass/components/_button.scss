@@ -4,13 +4,9 @@
 	&:visited {
 		display: inline-block;
 
-		color: inherit;
-		text-align: center;
 		text-decoration: none;
-		border-radius: 5px;
 		outline: none;
-
-		padding: .3em 1.5em;
+		padding: .5em 1.5em;
 
 		backface-visibility: hidden;
 		transition: box-shadow .2s, transform .2s, border .2s;

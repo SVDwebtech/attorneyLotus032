@@ -125,6 +125,40 @@ body {
   text-align: justify;
 }
 
+.header {
+  color: rgb(235, 235, 235);
+}
+.header__heading-h1 {
+  text-align: center;
+}
+.header__heading-h1--primary {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+.header__heading-h1--secondary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.header__heading-h1--tertiary {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.header__paragraph {
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.header__btn {
+  color: rgb(235, 235, 235);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .testimonial {
   color: rgb(19, 170, 95);
 }
@@ -233,12 +267,9 @@ body {
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
-  color: inherit;
-  text-align: center;
   text-decoration: none;
-  border-radius: 5px;
   outline: none;
-  padding: 0.3em 1.5em;
+  padding: 0.5em 1.5em;
   backface-visibility: hidden;
   transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
 }
@@ -331,7 +362,7 @@ body {
     grid-column: 1/-1;
   }
   .header {
-    height: auto;
+    height: 95vh;
     grid-column: 1/span 11;
     grid-row: 2/span 1;
   }
@@ -374,6 +405,46 @@ body {
     grid-column: 7/span 5;
     grid-row: 2/span 1;
   }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(3, 46, 68) 50%, rgb(30, 30, 30) 80%);
+}
+.header__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(to bottom, transparent 20%, rgba(20, 20, 20, 0.85) 65%, rgb(30, 30, 30) 85%), url("/img/attorney01.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: min(100%, 70rem);
+  padding: 1rem 5rem 3rem;
+}
+.header__heading-h1--primary {
+  display: block;
+}
+.header__heading-h1--secondary {
+  display: block;
+}
+.header__heading-h1--tertiary {
+  display: block;
+}
+.header__heading-h1--tertiary:not(:last-child) {
+  margin-right: 1rem;
+}
+.header__heading-h1, .header__paragraph {
+  margin-bottom: calc(15px + 1rem);
+}
+.header__blacklozenge {
+  margin: 0 1rem;
+}
+.header__btn {
+  background-color: transparent;
+  border: 2px solid rgb(235, 235, 235);
 }
 
 /*# sourceMappingURL=styles.css.map */
