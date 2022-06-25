@@ -6,16 +6,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// align-items: center;
-
 	
-
 	background: linear-gradient(to bottom, $color-prussianblue 50%, $color-dark 80%);
-	// background-size: cover;
-	// background-position:center;
-	// background-repeat: no-repeat;
-
-	// padding: 2rem;
 	
 	&__content-container {
 		display: flex;
@@ -58,17 +50,64 @@
 	&__blacklozenge {
 		margin: 0 1rem;
 	}
-
-	
-
-	// &__paragraph {
-	// 	margin-bottom: $x-large;
-	// }
 		
 	&__btn {
 		background-color: transparent;
 		border: 2px solid $color-white;
+	}	
+}
+
+/////////////////////////////////////////////////////////////////////
+// FOOTER
+/////////////////////////////////////////////////////////////////////
+
+.footer {	
+	background-color: $color-mudbrown;
+
+	&__container > * {
+		margin-bottom: calc($x-large + 2rem);
+
+		@include respond(tab-land) {
+			padding: 0 calc($x-large + 5rem);
+		}
 	}
-		
+
+	&__container {
+		padding: 1rem;
+	}
+
+	&__footer-info {
+	
+		@include respond(tab-land) {
+			display: flex;
+			justify-content: space-evenly;
+			
+			padding: 1rem;
+		}
+	}
+
+	&__footer-info > * {
+		margin-bottom: calc($x-large + 1rem);
+	}
+
+	@include respond(tab-port) {
+		&__contact-info {
+			flex: 1 0 22rem;
+		}
+		&__quick-links {
+			flex: 1 0 22rem;
+		}
+		&__social-media {
+			flex: 1 0 22rem;
+		}
+	}
+
+	&__heading {
+		margin-top: calc($x-large + 3rem);
+	}
+
+	h3 {
+		margin-bottom: $small;
+	}
 }
 
