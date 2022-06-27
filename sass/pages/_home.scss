@@ -62,7 +62,7 @@
 /////////////////////////////////////////////////////////////////////
 
 .footer {	
-	background-color: $color-mudbrown;
+	background-color: $color-dark;
 
 	&__container > * {
 		margin-bottom: calc($x-large + 2rem);
@@ -76,6 +76,10 @@
 		padding: 1rem;
 	}
 
+	&__heading {
+		margin-top: calc($x-large + 3rem);
+	}
+
 	&__footer-info {
 	
 		@include respond(tab-land) {
@@ -87,7 +91,15 @@
 	}
 
 	&__footer-info > * {
-		margin-bottom: calc($x-large + 1rem);
+		margin-bottom: calc($x-large + 2rem);
+	}
+
+	&__heading-3 {
+		margin-bottom: $small;
+	}
+
+	&__address {
+		font-style: normal;
 	}
 
 	@include respond(tab-port) {
@@ -100,14 +112,6 @@
 		&__social-media {
 			flex: 1 0 22rem;
 		}
-	}
-
-	&__heading {
-		margin-top: calc($x-large + 3rem);
-	}
-
-	h3 {
-		margin-bottom: $small;
 	}
 }
 

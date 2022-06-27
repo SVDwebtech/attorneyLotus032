@@ -1,0 +1,8 @@
+.address {
+    width: 25rem;
+    margin: 0 auto;
+
+    &__sections {
+        margin-bottom: calc($x-large + .5rem);
+    }
+}
