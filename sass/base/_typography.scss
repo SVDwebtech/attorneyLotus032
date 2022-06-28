@@ -7,6 +7,10 @@ body {
 	text-align: justify;
 }
 
+.navbar {
+	color: $color-white;
+}
+
 
 .header {
 
@@ -49,6 +53,10 @@ body {
 		text-transform: uppercase;
 		text-align: center;
 	}
+}
+
+.main {
+	color: $color-white;
 }
 
 .testimonial {

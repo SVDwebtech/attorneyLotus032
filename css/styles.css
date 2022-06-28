@@ -134,6 +134,10 @@ body {
   text-align: justify;
 }
 
+.navbar {
+  color: rgb(235, 235, 235);
+}
+
 .header {
   color: rgb(235, 235, 235);
 }
@@ -166,6 +170,10 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
+}
+
+.main {
+  color: rgb(235, 235, 235);
 }
 
 .testimonial {
@@ -380,7 +388,7 @@ body {
 }
 
 .navbar {
-  background-color: cadetblue;
+  background-color: rgb(30, 30, 30);
 }
 
 .header {
@@ -414,7 +422,7 @@ body {
   }
   .sidebar {
     grid-column: 12/-1;
-    grid-row: 2/span 2;
+    grid-row: 2/span 3;
   }
   .footer {
     grid-column: 1/-1;
@@ -423,7 +431,7 @@ body {
 @media (min-width: 75em) {
   .navbar {
     grid-column: 1/span 1;
-    grid-row: 2/span 2;
+    grid-row: 1/span 3;
   }
   .header {
     grid-column: 2/span 10;
@@ -432,7 +440,7 @@ body {
     grid-column: 2/span 10;
   }
   .sidebar {
-    grid-row: 2/span 2;
+    grid-row: 1/span 3;
   }
   .footer {
     grid-row: 4/span 1;
@@ -487,6 +495,10 @@ body {
 .header__btn {
   background-color: transparent;
   border: 2px solid rgb(235, 235, 235);
+}
+
+.main {
+  background: linear-gradient(to bottom, rgb(30, 30, 30) 3%, rgb(3, 46, 68), rgb(30, 30, 30) 97%);
 }
 
 .footer {
