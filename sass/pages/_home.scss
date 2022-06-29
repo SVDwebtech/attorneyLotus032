@@ -58,11 +58,19 @@
 }
 
 /////////////////////////////////////////////////////////////////////
-// FOOTER
+// MAIN
 /////////////////////////////////////////////////////////////////////
 .main {
 
-	background: linear-gradient(to bottom, $color-dark 3%, $color-prussianblue, $color-dark 97%);
+	background: linear-gradient(to bottom, $color-dark, $color-prussianblue 10%, $color-prussianblue 90%, $color-dark);
+
+	& > *:not(:last-child) {
+		margin-bottom: calc($x-large + 3rem);
+	}
+
+	
+
+
 
 }
 

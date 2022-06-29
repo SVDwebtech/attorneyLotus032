@@ -57,6 +57,22 @@ body {
 
 .main {
 	color: $color-white;
+
+	&__heading-2 {
+		margin: $large 0;
+	}
+
+	&__heading-3 {
+		margin: $medium 0;
+	}
+
+	&__heading-4 {
+		margin: $medium 0;
+	}
+
+	&__paragraph {
+		margin: $small 0 $x-large 0;
+	}
 }
 
 .testimonial {
