@@ -64,14 +64,42 @@
 
 	background: linear-gradient(to bottom, $color-dark, $color-prussianblue 10%, $color-prussianblue 90%, $color-dark);
 
-	& > *:not(:last-child) {
-		margin-bottom: calc($x-large + 3rem);
+	// & > *:not(:last-child) {
+	// 	margin-bottom: calc($x-large + 3rem);
+	// }
+
+	// &__about, &__team, &__practice-areas {
+	
+	// 	& > *:not(:last-child) {
+	// 	margin-bottom: calc($x-large + 1rem);
+	// 	}
+
+	// }
+
+	&__about {
+		background-color: red;
 	}
 
+	&__team {
+		background-color: orangered;
+	}
+
+	&__practice-areas {
+		background-color: yellow;
+	}
+
+	&__blog {
+		background-color: green;
+	}
+
+	&__news-and-events {
+		background-color: blue;
+	}
+
+	&__contact {
+		background-color: purple;
+	}
 	
-
-
-
 }
 
 /////////////////////////////////////////////////////////////////////
