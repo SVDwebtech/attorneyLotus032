@@ -507,7 +507,7 @@ body {
   background-color: orangered;
 }
 .main__practice-areas {
-  background-color: yellow;
+  background-color: rgb(168, 168, 5);
 }
 .main__blog {
   background-color: green;
@@ -517,6 +517,14 @@ body {
 }
 .main__contact {
   background-color: purple;
+}
+.main__article {
+  width: 100%;
+}
+.main__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .footer {
