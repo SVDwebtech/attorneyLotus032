@@ -175,6 +175,18 @@ body {
 .main {
   color: rgb(235, 235, 235);
 }
+.main__heading-2 {
+  margin: 11px 0;
+}
+.main__heading-3 {
+  margin: 8px 0;
+}
+.main__heading-4 {
+  margin: 8px 0;
+}
+.main__paragraph {
+  margin: 5px 0 15px 0;
+}
 
 .testimonial {
   color: rgb(19, 170, 95);
@@ -500,8 +512,8 @@ body {
 .main {
   background: linear-gradient(to bottom, rgb(30, 30, 30), rgb(3, 46, 68) 10%, rgb(3, 46, 68) 90%, rgb(30, 30, 30));
 }
-.main__about {
-  background-color: red;
+.main > *:not(:last-child) {
+  margin-bottom: calc(15px + 3rem);
 }
 .main__team {
   background-color: orangered;
