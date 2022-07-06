@@ -7,6 +7,28 @@ body {
 	text-align: justify;
 }
 
+.heading-2 {
+	color: $color-rainforest;
+	font-size: clamp(2rem, 7vw, 5rem);
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-underline-offset: 10%;
+	text-shadow: $txt-shdw-h2;
+	text-align: start;
+	margin: $large 0;
+}
+
+// .heading-3 {
+// 	color: $color-gogreen;
+// 	font-size: clamp(1.6rem, 6vw, 4rem);
+// 	font-weight: 700;
+// 	letter-spacing: 2px;
+// 	text-align: start;
+// 	margin: $medium 0;
+// }
+
 .navbar {
 	color: $color-white;
 }
@@ -59,20 +81,17 @@ body {
 	color: $color-white;
 
 
-	&__heading-2 {
-		margin: $large 0;
+	&__heading-2 {		
+		
 	}
 
 	&__heading-3 {
-		margin: $medium 0;
 	}
 
 	&__heading-4 {
-		margin: $medium 0;
 	}
 
 	&__paragraph {
-		margin: $small 0 $x-large 0;
 	}
 
 }

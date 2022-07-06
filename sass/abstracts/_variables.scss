@@ -19,7 +19,7 @@ $fs-x-lg: 3.5rem;       // heading-1
 $fs-lg: 3rem;           // heading-2
 $fs-md: 2.5rem;         // heading-3
 $fs-sm: 2rem;           // heading-4
-$fs-x-lg: 1.6rem;       // paragraph
+$fs-x-sm: 1.6rem;       // paragraph
 
 // padding & margins
 $x-small: .5rem;
@@ -41,3 +41,5 @@ $box-shadow-light: 0 2rem 5rem rgba(0, 0, 0, .1);
 $box-shadow-medium: 0 2rem 5rem rgba(0, 0, 0, .5);
 $box-shadow-dark: 0 2rem 5rem rgba(0, 0, 0, .8);
 
+//text-shadow
+$txt-shdw-h2: .5px .5px 1px $color-malachite;

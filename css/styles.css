@@ -134,6 +134,19 @@ body {
   text-align: justify;
 }
 
+.heading-2 {
+  color: rgb(1, 114, 96);
+  font-size: clamp(2rem, 7vw, 5rem);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 10%;
+  text-shadow: 0.5px 0.5px 1px rgb(103, 226, 109);
+  text-align: start;
+  margin: 11px 0;
+}
+
 .navbar {
   color: rgb(235, 235, 235);
 }
@@ -175,19 +188,6 @@ body {
 .main {
   color: rgb(235, 235, 235);
 }
-.main__heading-2 {
-  margin: 11px 0;
-}
-.main__heading-3 {
-  margin: 8px 0;
-}
-.main__heading-4 {
-  margin: 8px 0;
-}
-.main__paragraph {
-  margin: 5px 0 15px 0;
-}
-
 .testimonial {
   color: rgb(19, 170, 95);
 }
@@ -514,21 +514,6 @@ body {
 }
 .main > *:not(:last-child) {
   margin-bottom: calc(15px + 3rem);
-}
-.main__team {
-  background-color: orangered;
-}
-.main__practice-areas {
-  background-color: rgb(168, 168, 5);
-}
-.main__blog {
-  background-color: green;
-}
-.main__news-and-events {
-  background-color: blue;
-}
-.main__contact {
-  background-color: purple;
 }
 .main__article {
   width: 100%;
